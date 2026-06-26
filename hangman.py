@@ -1,5 +1,6 @@
 import random
 
+
 stages = ['''
   +---+
   |   |
@@ -71,6 +72,9 @@ extra_list = []
 while not loop :
     user_guess = input("guess a word: ").lower() 
 
+    if user_guess in extra_list:
+        print(f"you have already guessed {user_guess} !!!!!!!!")
+
     display = ""
 
 
@@ -89,9 +93,9 @@ while not loop :
 
     if user_guess not in guess_word:
         user_lives -= 1
-        print(f"wrong you have {user_lives} lives left")
+        print(f"*************** wrong you have {user_lives} lives left/6 ******************")
     else:
-        print("correct guess")
+        print("correct guess!")
 
 
     print((stages[6 - user_lives]))
@@ -99,8 +103,8 @@ while not loop :
 
     if user_lives == 0:
         loop = True
-        print(f"game over! you lost. the word was: {guess_word}")
+        print(f"********************************** game over! Better luck next time. the word was: {guess_word}*****************************")
  
     elif "_" not in display:
       loop = True
-      print("congratulations! you won!")
+      print("*************************************** congratulations! you win!!! *******************************************************")
