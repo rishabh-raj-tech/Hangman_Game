@@ -70,7 +70,7 @@ loop = False
 extra_list = []
 
 while not loop :
-    user_guess = input("guess a word: ").lower() 
+    user_guess = input("guess a letter: ").lower() 
 
     if user_guess in extra_list:
         print(f"you have already guessed {user_guess} !!!!!!!!")
