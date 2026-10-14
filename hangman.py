@@ -103,7 +103,8 @@ while not loop :
 
     if user_lives == 0:
         loop = True
-        print(f"********************************** game over! Better luck next time. the word was: {guess_word}*****************************")
+        print(f"********************************** game over! Better luck next time. the word was:- *****************************")
+        print(f"The word was {guess_word}")
  
     elif "_" not in display:
       loop = True
